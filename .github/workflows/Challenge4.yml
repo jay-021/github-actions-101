@@ -5,5 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Custom Action
-      run: ./Custom action/entrypoint.sh
+      run: ./Custom-action/entrypoint.sh
 

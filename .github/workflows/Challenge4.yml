@@ -1,8 +1,8 @@
-name: Challenge5
+name: Custom-action
 on: [push]
 jobs:
-  main:
-    runs-on: ubuntu-letest
-    steps: 
-      -  uses: actions/checkout@v2
-      -  uses: jay-021/github-actions-101/Custom-action@main
+  my_job:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Custom Action
+      run: ./entrypoint.sh

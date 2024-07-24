@@ -13,10 +13,9 @@ jobs:
               run: env | sort
     job2:
         name: Second job
-        runs-on: ubuntu-latests
+        runs-on: windows-latest
         steps:
             - name: step one
               uses: actions/checkout@v2
-
             - name: step two
-              run: "env | sort"
+              run: "Get-ChildItem  Env: | Sort-Object Name"
